@@ -1,5 +1,3 @@
-
-
 fetch('https://iss.moex.com/iss/statistics/engines/currency/markets/selt/rates.json?iss.meta=off')
 .then((response) => {
     if (!response.ok) {
@@ -33,33 +31,32 @@ fetch('https://iss.moex.com/iss/statistics/engines/currency/markets/selt/rates.j
 
     eur_to_rub = window.eur_to_rub * 1.01 * 1.017 * 1.011 * 1.005;
 
-    document.getElementById("rub1").innerHTML = (eur_to_rub * 1.05).toFixed(3);
-    document.getElementById("rub2").innerHTML = (eur_to_rub * 1.048).toFixed(3);
-    document.getElementById("rub3").innerHTML = (eur_to_rub * 1.045).toFixed(3);
-    document.getElementById("rub4").innerHTML = (eur_to_rub * 1.04).toFixed(3);
-    document.getElementById("rub5").innerHTML = (eur_to_rub * 1.037).toFixed(3);
-    document.getElementById("rub6").innerHTML = (eur_to_rub * 1.035).toFixed(3);
-    document.getElementById("rub7").innerHTML = (eur_to_rub * 1.033).toFixed(3);
-    document.getElementById("rub8").innerHTML = (eur_to_rub * 1.031).toFixed(3);
-    document.getElementById("rub9").innerHTML = (eur_to_rub * 1.029).toFixed(3);
-    document.getElementById("rub10").innerHTML = (eur_to_rub * 1.027).toFixed(3);
-    document.getElementById("rub11").innerHTML = (eur_to_rub * 1.025).toFixed(3);
+    document.getElementById("rub1").innerHTML = (eur_to_rub * 1.05).toFixed(1);
+    document.getElementById("rub2").innerHTML = (eur_to_rub * 1.048).toFixed(1);
+    document.getElementById("rub3").innerHTML = (eur_to_rub * 1.045).toFixed(1);
+    document.getElementById("rub4").innerHTML = (eur_to_rub * 1.04).toFixed(1);
+    document.getElementById("rub5").innerHTML = (eur_to_rub * 1.037).toFixed(1);
+    document.getElementById("rub6").innerHTML = (eur_to_rub * 1.035).toFixed(1);
+    document.getElementById("rub7").innerHTML = (eur_to_rub * 1.033).toFixed(1);
+    document.getElementById("rub8").innerHTML = (eur_to_rub * 1.031).toFixed(1);
+    document.getElementById("rub9").innerHTML = (eur_to_rub * 1.029).toFixed(1);
+    document.getElementById("rub10").innerHTML = (eur_to_rub * 1.027).toFixed(1);
+    document.getElementById("rub11").innerHTML = (eur_to_rub * 1.025).toFixed(1);
 
-    document.getElementById('usdt1').innerHTML = (eur_to_usdt * 0.95).toFixed(3);
-    document.getElementById('usdt2').innerHTML = (eur_to_usdt * 0.952).toFixed(3);
-    document.getElementById('usdt3').innerHTML = (eur_to_usdt * 0.955).toFixed(3);
-    document.getElementById('usdt4').innerHTML = (eur_to_usdt * 0.96).toFixed(3);
-    document.getElementById('usdt5').innerHTML = (eur_to_usdt * 0.963).toFixed(3);
-    document.getElementById('usdt6').innerHTML = (eur_to_usdt * 0.965).toFixed(3);
-    document.getElementById('usdt7').innerHTML = (eur_to_usdt * 0.967).toFixed(3);
-    document.getElementById('usdt8').innerHTML = (eur_to_usdt * 0.969).toFixed(3);
-    document.getElementById('usdt9').innerHTML = (eur_to_usdt * 0.971).toFixed(3);
-    document.getElementById('usdt10').innerHTML = (eur_to_usdt * 0.973).toFixed(3);
-    document.getElementById('usdt11').innerHTML = (eur_to_usdt * 0.975).toFixed(3);
+    document.getElementById('usdt1').innerHTML = (eur_to_usdt * 0.95).toFixed(1);
+    document.getElementById('usdt2').innerHTML = (eur_to_usdt * 0.952).toFixed(1);
+    document.getElementById('usdt3').innerHTML = (eur_to_usdt * 0.955).toFixed(1);
+    document.getElementById('usdt4').innerHTML = (eur_to_usdt * 0.96).toFixed(1);
+    document.getElementById('usdt5').innerHTML = (eur_to_usdt * 0.963).toFixed(1);
+    document.getElementById('usdt6').innerHTML = (eur_to_usdt * 0.965).toFixed(1);
+    document.getElementById('usdt7').innerHTML = (eur_to_usdt * 0.967).toFixed(1);
+    document.getElementById('usdt8').innerHTML = (eur_to_usdt * 0.969).toFixed(1);
+    document.getElementById('usdt9').innerHTML = (eur_to_usdt * 0.971).toFixed(1);
+    document.getElementById('usdt10').innerHTML = (eur_to_usdt * 0.973).toFixed(1);
+    document.getElementById('usdt11').innerHTML = (eur_to_usdt * 0.975).toFixed(1);
 
     
 })
 .catch((error) => {
     console.error(error);
 });
-
