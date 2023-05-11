@@ -22,7 +22,7 @@ fetch('https://iss.moex.com/iss/statistics/engines/currency/markets/selt/rates.j
 })
 .then((json) => {
     // Текущий курс доллара ЦБРФ
-    
+
     window.eur_to_rub = json.cbrf.data[0][json.cbrf.columns.indexOf('CBRF_EUR_LAST')];
     eur_to_usd = window.eur_to_rub / window.usd_to_rub;
     usd_to_eur = 1 / eur_to_usd;
@@ -43,19 +43,19 @@ fetch('https://iss.moex.com/iss/statistics/engines/currency/markets/selt/rates.j
     document.getElementById("rub10").innerHTML = (eur_to_rub * 1.027).toFixed(1);
     document.getElementById("rub11").innerHTML = (eur_to_rub * 1.025).toFixed(1);
 
-    document.getElementById('usdt1').innerHTML = (eur_to_usdt * 0.95).toFixed(1);
-    document.getElementById('usdt2').innerHTML = (eur_to_usdt * 0.952).toFixed(1);
-    document.getElementById('usdt3').innerHTML = (eur_to_usdt * 0.955).toFixed(1);
-    document.getElementById('usdt4').innerHTML = (eur_to_usdt * 0.96).toFixed(1);
-    document.getElementById('usdt5').innerHTML = (eur_to_usdt * 0.963).toFixed(1);
-    document.getElementById('usdt6').innerHTML = (eur_to_usdt * 0.965).toFixed(1);
-    document.getElementById('usdt7').innerHTML = (eur_to_usdt * 0.967).toFixed(1);
-    document.getElementById('usdt8').innerHTML = (eur_to_usdt * 0.969).toFixed(1);
-    document.getElementById('usdt9').innerHTML = (eur_to_usdt * 0.971).toFixed(1);
-    document.getElementById('usdt10').innerHTML = (eur_to_usdt * 0.973).toFixed(1);
-    document.getElementById('usdt11').innerHTML = (eur_to_usdt * 0.975).toFixed(1);
+    document.getElementById('usdt1').innerHTML = (eur_to_usdt * 0.95).toFixed(3);
+    document.getElementById('usdt2').innerHTML = (eur_to_usdt * 0.952).toFixed(3);
+    document.getElementById('usdt3').innerHTML = (eur_to_usdt * 0.955).toFixed(3);
+    document.getElementById('usdt4').innerHTML = (eur_to_usdt * 0.96).toFixed31);
+    document.getElementById('usdt5').innerHTML = (eur_to_usdt * 0.963).toFixed(3);
+    document.getElementById('usdt6').innerHTML = (eur_to_usdt * 0.965).toFixed(3);
+    document.getElementById('usdt7').innerHTML = (eur_to_usdt * 0.967).toFixed(3);
+    document.getElementById('usdt8').innerHTML = (eur_to_usdt * 0.969).toFixed(3);
+    document.getElementById('usdt9').innerHTML = (eur_to_usdt * 0.971).toFixed(3);
+    document.getElementById('usdt10').innerHTML = (eur_to_usdt * 0.973).toFixed(3);
+    document.getElementById('usdt11').innerHTML = (eur_to_usdt * 0.975).toFixed(3);
 
-    
+
 })
 .catch((error) => {
     console.error(error);
