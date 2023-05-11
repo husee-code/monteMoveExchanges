@@ -46,7 +46,7 @@ fetch('https://iss.moex.com/iss/statistics/engines/currency/markets/selt/rates.j
     document.getElementById('usdt1').innerHTML = (eur_to_usdt * 0.95).toFixed(3);
     document.getElementById('usdt2').innerHTML = (eur_to_usdt * 0.952).toFixed(3);
     document.getElementById('usdt3').innerHTML = (eur_to_usdt * 0.955).toFixed(3);
-    document.getElementById('usdt4').innerHTML = (eur_to_usdt * 0.96).toFixed31);
+    document.getElementById('usdt4').innerHTML = (eur_to_usdt * 0.96).toFixed(3);
     document.getElementById('usdt5').innerHTML = (eur_to_usdt * 0.963).toFixed(3);
     document.getElementById('usdt6').innerHTML = (eur_to_usdt * 0.965).toFixed(3);
     document.getElementById('usdt7').innerHTML = (eur_to_usdt * 0.967).toFixed(3);
