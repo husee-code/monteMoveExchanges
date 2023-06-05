@@ -1,5 +1,5 @@
-eur_to_usdt = 1 / eur_to_usd_original * 0.982  // Прибавляем наценку к EUR/USD
-eur_to_rub = eur_to_rub_original * 1.01 * 1.017 * 1.011 * 1.005  //  Прибавляем наценку к EUR/RUB
+eur_to_usdt = 1 / window.eur_to_usd_original * 0.982  // Прибавляем наценку к EUR/USD
+eur_to_rub = window.eur_to_rub_original * 1.01 * 1.017 * 1.011 * 1.005  //  Прибавляем наценку к EUR/RUB
 
 
 // Коэффициенты Евро → Рубль
