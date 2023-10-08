@@ -8,7 +8,7 @@ $.get('https://openexchangerates.org/api/latest.json', {
     window.eur_to_usd_original = data["rates"]["USD"]
     eur_to_rub = eur_to_rub * window.eur_to_rub_original
     eur_to_usdt = eur_to_usdt / window.eur_to_usd_original
-        
+    console.log(window.eur_to_rub_original)
     document.getElementById("rub1").innerHTML = (eur_to_rub*rub1).toFixed(1);
     document.getElementById("rub2").innerHTML = (eur_to_rub*rub2).toFixed(1);
     document.getElementById("rub3").innerHTML = (eur_to_rub*rub3).toFixed(1);
