@@ -20,7 +20,7 @@ $.get('https://openexchangerates.org/api/latest.json', {
     document.getElementById("rub9").innerHTML = (eur_to_rub*rub9).toFixed(1);
     document.getElementById("rub10").innerHTML = (eur_to_rub*rub10).toFixed(1);
     document.getElementById("rub11").innerHTML = (eur_to_rub*rub11).toFixed(1);
-    document.getElementById("rub12").innerHTML = (eur_to_rub*rub12).toFixed(1);
+    document.getElementById("rub12").innerHTML = (eur_to_rub*rub12).toFixed(1); // ХУЙХУЙХУ
 
     document.getElementById('usdt1').innerHTML = (eur_to_usdt*usdt1).toFixed(3);
     document.getElementById('usdt2').innerHTML = (eur_to_usdt*usdt2).toFixed(3);
