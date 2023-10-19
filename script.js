@@ -33,5 +33,5 @@ $.get('https://openexchangerates.org/api/latest.json', {
     document.getElementById('usdt9').innerHTML = (eur_to_usdt*usdt9).toFixed(3);
     document.getElementById('usdt10').innerHTML = (eur_to_usdt*usdt10).toFixed(3);
     document.getElementById('usdt11').innerHTML = (eur_to_usdt*usdt11).toFixed(3);
-    document.getElementById('usdt11').innerHTML = (eur_to_usdt*usdt12).toFixed(3);
+    document.getElementById('usdt12').innerHTML = (eur_to_usdt*usdt12).toFixed(3);
 });
